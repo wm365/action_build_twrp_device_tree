@@ -34,7 +34,7 @@ jobs:
         python3 -m twrpdtgen -o dt/ *.img
     - name: ZIP device tree
       run: |
-        zip -r DeviceTree.zip ./dt
+        zip -r DeviceTree.zip https://github.com/AndroidMediatekRecoveryDevelopment/android_device_gionee_gionee_p3 ./dt
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
