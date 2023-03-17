@@ -38,9 +38,9 @@ jobs:
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
       with:
-        files: |
+        files: |https://github.com/AndroidMediatekRecoveryDevelopment/android_device_gionee_gionee_p3
           ./DeviceTree.zip
-        name: TWRP_Device_Tree-${{ github.run_id https://github.com/AndroidMediatekRecoveryDevelopment/android_device_gionee_gionee_p3 }}
+        name: TWRP_Device_Tree-${{ github.run_id }}
         tag_name: ${{ github.run_id }}
         body: DeviceTree for twrp
       env:
